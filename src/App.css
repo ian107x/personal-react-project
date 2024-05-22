@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+.header-piece{
+  background-color: black;
+  color: white;
+  position: sticky;
+  height: fit-content;
+
+}
+
+.burger-button{
+  width: 5vh;
+  height: 5vh;
+  float: inline-start;
+}
+.burger-button:hover{
+  cursor: pointer;
+}
+
+.user-button{
+  width: 5vh;
+  height: 5vh;
+  float: inline-end;
+}
+
+.title{
+  width: 5vh;
+  height: 5vh;
+  font-size: 45px;
+  margin-top: 0%;
+}
+
+.user-button:hover{
+  cursor: pointer;
+}
+
+title{
+  float: left;
+}
