@@ -42,6 +42,7 @@
   color: white;
   position: sticky;
   height: fit-content;
+  display: block;
 
 }
 
