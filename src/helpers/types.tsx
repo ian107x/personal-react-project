@@ -13,9 +13,14 @@ export type DashProp = {
 
 export type User = {
     email: string;
-    password: string;
+    password?: string;
     name?: string;
     id?: string;
+}
+
+export type AuthCreds = {
+    email: string;
+    password?: string;
 }
 
 export type authState = {

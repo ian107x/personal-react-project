@@ -18,7 +18,6 @@ const authenticate = createAsyncThunk(
 const initialState: authState = {
     user: {
         email: "",
-        password: "",
         name: ""
     },
     isAuthenticated: false,
