@@ -9,7 +9,7 @@ function App() {
    <BrowserRouter>
     <Routes>
       <Route index path="/" element={<Banner/>}/>
-
+      <Route index path="/h" element={<Banner/>}/>
     </Routes>
    </BrowserRouter>
   );
