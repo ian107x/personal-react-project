@@ -46,10 +46,19 @@ export const authSlice = createSlice({
     },
     extraReducers: (builder)=>
         builder.addCase(authenticate.pending, (state, action)=>{
+            state.isLoading = true
 
         }).addCase(authenticate.fulfilled, (state, action)=>{
+            state.user.email = action.payload.email
+            state.user.name = action.payload.name
+            state.isAuthenticated = true
+            state.isLoading = false
 
         }).addCase(authenticate.rejected, (state, action)=>{
+
+            state.isAuthenticated = false
+            state.isLoading = false
+            state.error = "Error logging into your account. Please try again"
 
         })
 })

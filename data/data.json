@@ -25,6 +25,18 @@
             "email": "sample@mail.com",
             "password": "fligugigu"
         }
+    ],
+
+    "pokemon": [
+        {
+            "id": "001",
+            "name": "Bulbasaur",
+            "type_1": "grass",
+            "type_2": "poison",
+            "ability_1": "Overgrow",
+            "ability_2": "none",
+            "hidden_ability": "thick fat"
+        }
     ]
 
     
