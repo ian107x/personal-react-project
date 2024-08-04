@@ -6,5 +6,5 @@ type props = {
 }
 
 export default function ProtectedRoute({children}: props){
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
 }

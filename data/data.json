@@ -17,5 +17,15 @@
                 }
             ]
         }
+    ],
+    "users": [
+        {
+            "id": "1",
+            "name": "ian",
+            "email": "sample@mail.com",
+            "password": "fligugigu"
+        }
     ]
+
+    
 }

@@ -10,9 +10,9 @@ export default function AppLayout({children}: childProps){
     return(
         <>
             <Banner/>
-                <div>
+                <main>
                     {children}
-                </div>
+                </main>
             <Footer/>
         </>
     )

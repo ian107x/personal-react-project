@@ -55,6 +55,16 @@
   cursor: pointer;
 }
 
+.footer-piece{
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+
+}
+
 .user-button{
   width: 5vh;
   height: 5vh;
@@ -74,4 +84,22 @@
 
 title{
   float: left;
+}
+
+.loginForm{
+  display: block;
+  padding: 25%;
+  justify-content: space-between;
+}
+.formElement{
+  padding: 5%;
+  width: 100%;
+  height: 10%;
+}
+.formButton{
+  background-color: blue;
+  width: 30%;
+  color: white;
+  height: 10%;
+  padding: 2%;
 }

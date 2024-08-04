@@ -1,13 +1,13 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { error } from "console";
+import { PayloadAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { RootState } from "./store";
 import { User, authState } from "../helpers/types";
 
-const authenticate = createAsyncThunk(
+export const authenticate = createAsyncThunk(
     'auth/authenticate',
     async function({email, password}: User){
         const user: User = {email, password, name : "g", }
         if(0 < 5){
+            console.warn(user);
             return user
         }else{
             return Promise.reject();
@@ -29,9 +29,20 @@ export const authSlice = createSlice({
     name: "auth",
     initialState,
     reducers: {
-        login(){},
-        logout(){},
-        setIsLoading(){}
+        login(state, action: PayloadAction<authState>){
+            state.user = action.payload.user;
+            state.isAuthenticated = true;
+            state.isLoading = false;
+        },
+        logout(state){
+            state = initialState;
+        },
+        setIsLoading(state){
+            state.isLoading = true
+        },
+        setError(state){
+            state.error = "error logging in"
+        }
     },
     extraReducers: (builder)=>
         builder.addCase(authenticate.pending, (state, action)=>{
