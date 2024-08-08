@@ -1,4 +1,4 @@
-interface yugiohProp{
+export interface yugiohProp{
     name: string,
     id: number,
     attribute: "fire" | "water" | "earth" | "wind" | "light" | "dark" | "divine"
@@ -23,6 +23,8 @@ export default function YugiohCard({name, id, attribute, atk, def, level, type, 
             <p>{attribute}</p>
             <p>{level}</p>
             <p>{type}/{summon_type + "/" + effect ? "effect" : ""}</p>
+            <p>ATK: {atk}/ DEF: {def}</p>
+            <p>{description_text}</p>
 
 
         </div>

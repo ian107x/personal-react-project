@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage';
 import LoginPage from './pages/Login';
 import CreateAccountPage from './pages/CreateAccount';
 import UpdateAccountPage from './pages/UpdateAccountPage';
+import YugiohCardPage from './pages/YugiohCardPage';
 
 function App() {
   return (
@@ -15,18 +16,18 @@ function App() {
   <Banner/>
    <BrowserRouter>
     <Routes>
-      <Route index path="/" element={<HomePage></HomePage>}/>
+      <Route index path="/" element={<HomePage/>}/>
       <Route path='/loginPage' element={<LoginPage></LoginPage>}/>
       <Route path='/createAccountPage' element={<CreateAccountPage></CreateAccountPage>}/>
       <Route path='/updateAccountPage' element={<UpdateAccountPage></UpdateAccountPage>}/>
       <Route path='/aboutPage' element={<></>}/>
       <Route path='/pokemon' element={<></>}/>
-      <Route path='/yugioh' element={<></>}/>
+      <Route path='/yugioh' element={<YugiohCardPage />}/>
 
 
     </Routes>
    </BrowserRouter>
-    <Footer/>
+  <Footer/>
    </>
   );
 }

@@ -103,3 +103,11 @@ title{
   height: 10%;
   padding: 2%;
 }
+.yugiohCard{
+  text-align: center;
+}
+.yugiohCard:hover{
+  cursor: pointer;
+  color: red;
+  transition: 0.2s ease-in-out;
+}
