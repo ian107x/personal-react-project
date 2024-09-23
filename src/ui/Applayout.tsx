@@ -1,5 +1,5 @@
 import { ReactNode } from "react"
-import Banner from "../components/Banner";
+import Banner from "../components/Banner/Banner";
 import Footer from "../components/Footer";
 
 type childProps = {

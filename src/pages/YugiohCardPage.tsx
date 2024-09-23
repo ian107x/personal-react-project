@@ -18,8 +18,8 @@ export default function YugiohCardPage(){
     return(
         <div>
             {dummyCards.map((card, id) =>(
-                <div className="yugiohCard">
-                    <YugiohCard key={id} name={card.name} id={card.id} attribute={card.attribute} atk={card.atk} def={card.def} level={card.level} type={card.type} summon_type={card.summon_type} effect={card.effect} tuner={card.tuner} description_text={card.description_text}  />
+                <div key={id} className="yugiohCard">
+                    <YugiohCard {...card}  />
                 </div>
             ))}
         </div>

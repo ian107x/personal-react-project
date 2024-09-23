@@ -13,18 +13,18 @@ export interface yugiohProp{
 
 }
 
-export default function YugiohCard({name, id, attribute, atk, def, level, type, summon_type, effect, description_text}: yugiohProp){
+export default function YugiohCard(card: yugiohProp){
     return (
         <div>
             <h3>
-                {name}
+                {card.name}
             </h3>
-            <p>{id}</p>
-            <p>{attribute}</p>
-            <p>{level}</p>
-            <p>{type}/{summon_type + "/" + effect ? "effect" : ""}</p>
-            <p>ATK: {atk}/ DEF: {def}</p>
-            <p>{description_text}</p>
+            <p>{card.id}</p>
+            <p>{card.attribute}</p>
+            <p>{card.level}</p>
+            <p>{card.type}/{card.summon_type + "/" + card.effect ? "effect" : ""}</p>
+            <p>ATK: {card.atk}/ DEF: {card.def}</p>
+            <p>{card.description_text}</p>
 
 
         </div>
