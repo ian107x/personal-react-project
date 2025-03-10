@@ -1,6 +1,7 @@
 import {HiOutlineHome, HiOutlineMenu, HiOutlineSearch, HiOutlineUser} from "react-icons/hi"
 import LoginForm from "../LoginForm"
 import { useNavigate } from "react-router-dom"
+import Button from "../Button/Button";
 
 export default function Banner(){
 
@@ -12,10 +13,12 @@ export default function Banner(){
     return(
         <header className="header-piece">
             
-            <HiOutlineMenu className="burger-button"/>
-            <span className="title">Yolo-Force</span>
+            <Button clickFunction={()=>{}}><HiOutlineMenu className="burger-button"/></Button>
+            <span className="title">Test Banner</span>
             <HiOutlineUser className="user-button"/>
-            <HiOutlineHome onClick={()=>handleHomeClick()} className="user-button"/>
+            <Button clickFunction={()=>handleHomeClick()} linkTo="/homepage">
+                <HiOutlineHome className="user-button"/>
+            </Button>
             
         </header>
     )

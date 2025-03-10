@@ -1,0 +1,26 @@
+.linkStyle{
+    color: white;
+}
+.linkStyle:hover{
+    color: lightblue;
+    background-color: darkgrey;
+}
+.buttonStyle{
+    width: fit-content;
+    height: fit-content;
+    background-color: aqua;
+    text-align: center;
+}
+.buttonStyle:hover{
+    background-color: aquamarine;
+}
+
+.sm{
+    height: 30px;
+}
+.md{
+    height: 50px;
+}
+.lg{
+    width: 60px;
+}

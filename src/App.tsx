@@ -13,8 +13,9 @@ import YugiohCardPage from './pages/YugiohCardPage';
 function App() {
   return (
   <>
-  <Banner/>
-   <BrowserRouter>
+  <BrowserRouter>
+    <Banner/>
+   
     <Routes>
       <Route index path="/" element={<HomePage/>}/>
       <Route path='/loginPage' element={<LoginPage></LoginPage>}/>
@@ -26,8 +27,9 @@ function App() {
 
 
     </Routes>
-   </BrowserRouter>
-  <Footer/>
+   
+    <Footer/>
+  </BrowserRouter>
    </>
   );
 }

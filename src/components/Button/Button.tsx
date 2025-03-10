@@ -1,4 +1,5 @@
 import { Children, ReactNode } from "react"
+import "./styles.scss";
 
 interface buttonProps{
     children: ReactNode;
@@ -11,7 +12,7 @@ export default function Button(props: buttonProps){
     return(
         <>
         { props.linkTo ? 
-        <a href={props.linkTo} className="buttonStyle linkStyle">
+        <a href={props.linkTo} className="buttonStyle">
             {props.children}
         </a> 
         :
