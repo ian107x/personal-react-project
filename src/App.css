@@ -37,24 +37,6 @@
   }
 }
 
-.header-piece{
-  background-color: black;
-  color: white;
-  position: sticky;
-  height: 60px;
-  display: block;
-
-}
-
-.burger-button{
-  width: 5vh;
-  height: 5vh;
-  float: inline-start;
-}
-.burger-button:hover{
-  cursor: pointer;
-}
-
 .footer-piece{
   color: white;
   text-align: center;

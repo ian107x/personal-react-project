@@ -2,6 +2,7 @@ import {HiOutlineHome, HiOutlineMenu, HiOutlineSearch, HiOutlineUser} from "reac
 import LoginForm from "../LoginForm"
 import { useNavigate } from "react-router-dom"
 import Button from "../Button/Button";
+import "./styles.scss"
 
 export default function Banner(){
 
